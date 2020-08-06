@@ -1,0 +1,103 @@
+body {
+  background-color: beige;
+}
+
+#board,
+#sidePanel {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#board {
+  margin-right: 40px;
+  margin-bottom: 30px;
+  user-select: none;
+}
+
+.row {
+  margin-bottom: 8px;
+}
+
+.row:first-child {
+  border-bottom: 1px solid black;
+}
+
+.result,
+.guess,
+.submit {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.result,
+.guess {
+  width: 28px;
+  height: 28px;
+}
+
+.result {
+  font-size: 0;
+  padding-top: 3px;
+  margin-right: 5px;
+}
+
+.result > div {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+.result > .black,
+.result > .white {
+  border-color: black;
+}
+
+.result > .black {
+  background-color: black;
+}
+
+.result > .white {
+  background-color: white;
+}
+
+.guess {
+  border: 2px solid black;
+  border-radius: 32px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  opacity: 25%;
+  cursor: pointer;  
+}
+
+.answer,
+.active,
+.inactive {
+  opacity: 100%;
+}
+
+.submit {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.submitted {
+  visibility: hidden;
+}
+
+#instructions {
+  width: 350px;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+#messageParagraph {
+  color: #ff4c00;
+  font-size: 50px;
+  margin: 0;
+}

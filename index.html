@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Mastermind</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<link href="style.css" rel="stylesheet">
+	<script src="script.js" defer>
+
+	</script>
+</head>
+
+<body>
+	<h1>Mastermind</h1>
+
+	<div id="board">
+		<div class="row">
+			<div class="result"></div>
+			<div class="guess answer">?</div>
+			<div class="guess answer">?</div>
+			<div class="guess answer">?</div>
+			<div class="guess answer">?</div>
+		</div>
+
+		<div class="row">
+			<div class="result">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<button class="submit" disabled>Submit</button>
+		</div>
+
+		<div class="row">
+			<div class="result">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+      <button class="submit" disabled>Submit</button>
+		</div>
+
+		<div class="row">
+			<div class="result">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+      <button class="submit" disabled>Submit</button>
+		</div>
+
+		<div class="row">
+			<div class="result">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+      <button class="submit" disabled>Submit</button>
+		</div>
+
+		<div class="row">
+			<div class="result">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+      <button class="submit" disabled>Submit</button>
+		</div>
+
+		<div class="row">
+			<div class="result">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+      <button class="submit" disabled>Submit</button>
+		</div>
+
+		<div class="row">
+			<div class="result">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+      <button class="submit" disabled>Submit</button>
+		</div>
+
+		<div class="row">
+			<div class="result">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+      <button class="submit" disabled>Submit</button>
+		</div>
+
+		<div class="row">
+			<div class="result">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+			<div class="guess"></div>
+      <button class="submit" disabled>Submit</button>
+		</div>
+
+		<div class="row">
+			<div class="result">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+			<div class="guess active"></div>
+			<div class="guess active"></div>
+			<div class="guess active"></div>
+			<div class="guess active"></div>
+      <button class="submit" disabled>Submit</button>
+		</div>
+	</div>
+
+	<div id="sidePanel">
+		<p id="instructions">
+			Click a circle to cycle through colors. Click submit after choosing four colors. A black dot will appear for every correct color in the correct position, and a white dot will appear for every correct color in the incorrect position. The goal is to guess all four colors.
+		</p>
+
+		<p id="messageParagraph"></p>
+	</div>
+</body>
+
+</html>
