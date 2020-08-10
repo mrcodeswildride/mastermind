@@ -5,7 +5,7 @@ let messageParagraph = document.getElementById(`messageParagraph`)
 
 let colors = [`yellow`, `orange`, `red`, `green`, `blue`, `black`]
 let answer = []
-let activeRow = 10
+let activeRow = rows.length - 1
 
 for (let i = 0; i < 4; i++) {
   let randomNumber = Math.floor(Math.random() * colors.length)
@@ -96,7 +96,7 @@ function deactivateCurrentRow() {
   }
 
   let submitButton = rows[activeRow].querySelector(`.submit`)
-  submitButton.classList.add(`submitted`)
+  submitButton.classList.remove(`submittable`)
 
   activeRow--
 }
@@ -107,6 +107,9 @@ function activateNextRow() {
   for (let square of squares) {
     square.classList.add(`active`)
   }
+
+  let submitButton = rows[activeRow].querySelector(`.submit`)
+  submitButton.classList.add(`submittable`)
 }
 
 function gameOver(win) {

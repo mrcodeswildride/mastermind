@@ -81,12 +81,13 @@ body {
 }
 
 .submit {
+  visibility: hidden;
   margin-left: 15px;
   margin-top: 5px;
 }
 
-.submitted {
-  visibility: hidden;
+.submittable {
+  visibility: visible;
 }
 
 #instructions {
