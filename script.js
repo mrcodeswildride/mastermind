@@ -23,7 +23,7 @@ for (let submitButton of submitButtons) {
 function makeGuess() {
   if (this.classList.contains(`active`)) {
     this.style.backgroundColor = getNextColor(this.style.backgroundColor)
-    
+
     let submitButton = this.parentElement.querySelector(`.submit`)
     submitButton.disabled = !isRowComplete(this.parentElement)
   }
@@ -68,8 +68,7 @@ function showResult(row, numBlack, numWhite) {
     if (numBlack > 0) {
       hole.classList.add(`black`)
       numBlack--
-    }
-    else if (numWhite > 0) {
+    } else if (numWhite > 0) {
       hole.classList.add(`white`)
       numWhite--
     }
@@ -79,11 +78,9 @@ function showResult(row, numBlack, numWhite) {
 
   if (win) {
     gameOver(true)
-  }
-  else if (activeRow == 0) {
+  } else if (activeRow == 0) {
     gameOver(false)
-  }
-  else {
+  } else {
     activateNextRow()
   }
 }
